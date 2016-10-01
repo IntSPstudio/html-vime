@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ViMe</title>
+		<link id="menu" rel="stylesheet" type="text/css" href="style/main_style.css">
+		<link id="content" rel="stylesheet" type="text/css" href="style/white_style.css">
+		<script>
+			function refreshCss(sheet){
+				document.getElementById("content").setAttribute("href", sheet);
+			}
+		</script>
+ 	</head>
+	<body>
+		<div class="menu">
+			<ul>
+			<li><a class="active" href="#"><h3>ViMe</h3></a></li>
+			<li><a href="#main"><h3>Home</h3></a></li>
+			<li><a href="#info"><h3>Info</h3></a></li>
+			<li><a href="#settings"><h3>Settings</h3></a></li>
+			</ul>
+		</div>
+
+		<div class="content">
+			<div style="margin-left:20%;padding:1px 16px;height:1000px;">
+				<!-- MAIN -->
+				<div id="main">
+					<h1>HOLA o.O</h1>
+					
+					<div class="txrcontenta">
+						<ul>
+							<li><p>Dunno tai jtn</p></li>
+						</ul>
+					</div>
+				</div>
+				<!-- LINKS -->
+				<div id="links">
+					<h1>LINKS</h1>
+					
+					<div class="txrcontenta">
+						<ul>
+							<li><p>Google</p></li>
+						</ul>
+					</div>
+				</div>
+				<!-- INFO -->
+				<div id="info">
+					<h1>INFO</h1>
+					
+					<div class="commintitle">
+						<h2>Version:</h2>
+					</div>
+					<div class="txrcontenta">
+						<ul>
+							<li><p>V:0.0.0.3</p></li>
+						</ul>
+					</div>
+				</div>
+				<!-- SETTINGS -->
+				<div id="settings">
+					<h1>SETTINGS</h1>
+
+					<div class="commintitle">
+						<h2>Theme:</h2>
+					</div>					
+					<div class="settingstheme">
+						<button class="themebutton" onclick="refreshCss('style/dark_style.css')">Dark</button>
+						<button class="themebutton" onclick="refreshCss('style/white_style.css')">White</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	</body>
+</html>
+
+<!--
+................................
+||||||||||||||||||||||||||||||||
+......||................||......
+......||................||......
+......||................||......
+......||................||......
+......||.....Tatu.T.....||......
+......||.......##.......||......           
+................................
+-->
