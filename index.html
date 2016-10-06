@@ -3,74 +3,71 @@
 	<head>
 		<meta charset="utf-8">
 		<title>ViMe</title>
-		<link id="menu" rel="stylesheet" type="text/css" href="style/main_style.css">
-		<link id="content" rel="stylesheet" type="text/css" href="style/white_style.css">
-		<script>
-			function refreshCss(sheet){
-				document.getElementById("content").setAttribute("href", sheet);
-			}
-		</script>
+		<link id="menu" rel="stylesheet" type="text/css" href="main_style.css">
+		<link id="content" rel="stylesheet" type="text/css" href="white_style.css">
+		<script src="main.js"></script>
  	</head>
 	<body>
+		<!-- LBAR MENU LINKS -->
 		<div class="menu">
 			<ul>
-			<li><a class="active" href="#"><h3>ViMe</h3></a></li>
-			<li><a href="#main"><h3>Home</h3></a></li>
-			<li><a href="#info"><h3>Info</h3></a></li>
-			<li><a href="#settings"><h3>Settings</h3></a></li>
+				<li><a href="#" class="tablinks" onclick="openTab(event,'MainTab')"><h3>Main</h3></a></li>
+				<li><a href="#" class="tablinks" onclick="openTab(event,'LinkTab')"><h3>Links</h3></a></li>
+				<li><a href="#" class="tablinks" onclick="openTab(event,'InfoTab')"><h3>Info</h3></a></li>
+				<li><a href="#" class="tablinks" onclick="openTab(event,'SettingsTab')"><h3>Settings</h3></a></li>
 			</ul>
 		</div>
-
+		<!-- CONTENT -->
 		<div class="content">
-			<div style="margin-left:20%;padding:1px 16px;height:1000px;">
-				<!-- MAIN -->
-				<div id="main">
-					<h1>HOLA o.O</h1>
-					
-					<div class="txrcontenta">
-						<ul>
-							<li><p>Dunno tai jtn</p></li>
-						</ul>
-					</div>
-				</div>
-				<!-- LINKS -->
-				<div id="links">
-					<h1>LINKS</h1>
-					
-					<div class="txrcontenta">
-						<ul>
-							<li><p>Google</p></li>
-						</ul>
-					</div>
-				</div>
-				<!-- INFO -->
-				<div id="info">
-					<h1>INFO</h1>
-					
+			<div style="margin-left:20%;padding:1px 16px;">
+				<!-- MAIN TAB -->
+				<div id="MainTab" class="tabcontent">
 					<div class="commintitle">
-						<h2>Version:</h2>
+						<h1>Main</h1>
+						<div class="textcontentblock">
+							<p>Dunno tai jtn</p>
+						</div>
 					</div>
-					<div class="txrcontenta">
+				</div>
+				<!-- LINK TAB -->
+				<div id="LinkTab" class="tabcontent">
+					<div class="commintitle">
+						<h1>Links</h1>
+					</div>
+					<div class="otherlinks">
 						<ul>
-							<li><p>V:0.0.0.3</p></li>
+							<!-- INTSP -->
+							<li><a href="http://intspstudio.weebly.com/" target="_blank"><p>IntSPstudio</p></a></li>
+							<!-- MAIN -->
+							<li><a href="https://www.google.fi/" target="_blank"><p>Google</p></a></li>
+							<li><a href="https://www.youtube.com/" target="_blank"><p>Youtube</p></a></li>
+							<!-- NEWS -->
+							<li><a href="https://www.engadget.com/" target="_blank"><p>Engadget</p></a></li>
+							<li><a href="http://www.iltalehti.fi/" target="_blank"><p>Iltalehti</p></a></li>
 						</ul>
 					</div>
 				</div>
-				<!-- SETTINGS -->
-				<div id="settings">
-					<h1>SETTINGS</h1>
-
+				<!-- VIME INFO TAB -->
+				<div id="InfoTab" class="tabcontent">
 					<div class="commintitle">
-						<h2>Theme:</h2>
-					</div>					
+						<h1>Info</h1>
+					</div>
+					<div class="textcontentblock">
+						<p>V:1.0.1.61016</p>
+					</div>
+				</div>
+				<!-- VIME SETTINGS TAB -->
+				<div id="SettingsTab" class="tabcontent">
+					<div class="commintitle">
+						<h1>Settings</h1>
+					</div>
 					<div class="settingstheme">
-						<button class="themebutton" onclick="refreshCss('style/dark_style.css')">Dark</button>
-						<button class="themebutton" onclick="refreshCss('style/white_style.css')">White</button>
+						<button class="themebutton" onclick="refreshCss('dark_style.css')">Dark</button>
+						<button class="themebutton" onclick="refreshCss('white_style.css')">White</button>
 					</div>
 				</div>
 			</div>
 		</div>
-	</body>
 	</body>
 </html>
 
